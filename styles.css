@@ -293,14 +293,14 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height:70vh;
+        height:100vh;
         top: 8vh;
         background-color: #20272e;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 80%;
         transform:translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -439,8 +439,7 @@ nav{
     }
     .intro{
         position: relative;
-        border-left: 4px hidden  #ba0010;
-        border-top: 4px solid  #ba0010;
+        border-left: 4px solid  #ba0010;
         padding:10px;
         top:35vh;
         left:6vh;

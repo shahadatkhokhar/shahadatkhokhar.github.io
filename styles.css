@@ -38,7 +38,7 @@ nav{
     width: 40%;
 }
 .nav-links li{
-    padding: 20px;
+    padding: 10px;
     list-style: none;
 }
 .nav-links a{
@@ -63,67 +63,7 @@ nav{
     display: none;
     cursor: pointer;
 }
-/* @media screen and (max-width:1000px){
-    .nav-links{
-        width: 60%;
-    }
-    
-}
 
-@media screen and (max-width:800px){
-    body{
-        overflow: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height:70vh;
-        top: 8vh;
-        background-color: #20272e;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        transform:translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li{
-        opacity:0;
-    }
-    .burger{
-        display: block;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-.close i{ 
-    opacity:0;
-}
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2{
-    opacity: 0;
-}
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-} */
 /* navbar ends */
 
 /* Home starts */
@@ -240,9 +180,21 @@ nav{
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
+
 #Projects .title span{
     color:#ba0010;
 }
+#Projects .project-info img{
+    width:40px;
+}
+#Projects .project-info h1 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+#Projects .project-img img{
+    height:100%;  
+}
+
 /* Projects ends */
 
 /* About Starts */
@@ -304,10 +256,7 @@ nav{
     padding:100px;
     margin:100px;
 }
-#Contact .title{
-    /* padding-top: 100px; */
-    /* margin-top: 50px; */
-}
+
 #Contact .title span{
     color:#ba0010;
 }
@@ -337,4 +286,161 @@ nav{
     padding: 10px 10px;
     text-decoration: none;
     
+}
+
+@media screen and (max-width:1000px){
+    /* navbar */
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height:70vh;
+        top: 8vh;
+        background-color: #20272e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity:0;
+    }
+    .burger{
+        display: block;
+    }
+    /* navbar ends here */
+    
+    .skill-links li{
+        display: inline-block;
+        list-style: none;
+        width: 20vh;
+        height: 20vh;
+        font-size: 20px;
+        padding: 2px;
+        margin: 10px;
+    }
+
+}
+@media screen and (max-width:900px){
+    /* Home */
+    .Home h3{
+        font-size: 35px;
+        padding:10px;
+    }
+    .Home .name{
+        font-size: 35px;
+        /* border-bottom: 4px solid white; */
+        display: inline;
+    }
+    .Home p{
+        font-size: 25px;
+        padding-top:20px;
+        padding-left: 10px;
+    }
+    .intro{
+        position: relative;
+        border-left: 4px solid  #ba0010;
+        padding:10px;
+        top:35vh;
+        left:11vh;
+    }
+    /* Home ends */
+    /* Skills start */
+    .skill-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-links li{
+        display: inline-block;
+        list-style: none;
+        width: 25vh;
+        height: 25vh;
+        font-size: 18px;
+        padding: 2px;
+        margin: 10px;
+    }
+    /*Skills ends here  */
+    /* Projects Start */
+    #Projects .project-item {
+        flex-direction: column;
+        width: 45%;
+    }
+    /* project ends */
+
+    #About .about-section{
+        flex-direction: column;
+        width: 60%;
+    }
+    #Contact .contact-section{
+        padding:20px;
+        margin:20px;
+    }
+    
+}
+
+@media screen and (max-width:770px){
+    /* home */
+    .Home h3{
+        font-size: 27px;
+        padding:10px;
+    }
+    .Home .name{
+        font-size: 27px;
+        display: inline;
+    }
+    .Home p{
+        font-size: 20px;
+        padding-top:20px;
+        padding-left: 10px;
+    }
+    /* home ends */
+    /* projects */
+    #Projects .project-item {
+        flex-direction: column;
+        width: 70%;
+    }
+    /* projects ends */
+    #footer-section .footer-contents{
+        background-color: #485563;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer-section .seperator{
+        display: none;
+    }
+    
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+.close i{ 
+    opacity:0;
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }

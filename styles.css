@@ -105,6 +105,7 @@ nav{
 }
 
 /* Home ends */
+/* style for all the sction titles */
  .title{
     text-align: center;
     font-size: 45px;
@@ -113,6 +114,60 @@ nav{
     padding: 20px;
     margin: 20px;
 }
+
+/* About Starts */
+#About .title{
+    font-size: 35px;
+    text-align: left;
+    margin:10px;
+    padding: 10px;
+}
+
+#About .title span{
+    color:#ba0010;
+}
+#About .about-info{
+    text-align: start;
+
+}
+#About .about-section{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	width: 50%;
+	margin: 50px auto;
+    overflow: hidden;
+    padding-top: 12%;
+}
+#About .about-section p{
+    margin: 10px;
+    padding:10px;
+    font-size: 17px;
+    color:#485563;
+}
+
+
+#About .about-section .resume a{
+    color:#485563;
+    text-decoration: none;
+    border:2px solid #ba0010;
+    display: inline-block;
+    margin-top:0;
+    padding: 5px;
+    font-size: 14px;
+}
+#About .about-section .resume a:hover{
+    border:2px solid #ba0010;
+    background-color: #ba0010;
+    color:white;
+}
+#About .profile-img img{
+    max-width: 220px;
+    border:1px solid #20272e;
+    border-radius: 10px;
+}
+/* About ends here */
 
 /* Skills start */
 #Skills .title{
@@ -197,59 +252,6 @@ nav{
 
 /* Projects ends */
 
-/* About Starts */
-#About .title{
-    font-size: 35px;
-    text-align: left;
-    margin:10px;
-    padding: 10px;
-}
-
-#About .title span{
-    color:#ba0010;
-}
-#About .about-info{
-    text-align: start;
-
-}
-#About .about-section{
-    display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	width: 50%;
-	margin: 50px auto;
-    overflow: hidden;
-    padding-top: 10%;
-}
-#About .about-section p{
-    margin: 10px;
-    padding:10px;
-    font-size: 17px;
-    color:#485563;
-}
-
-
-#About .about-section .resume a{
-    color:#485563;
-    text-decoration: none;
-    border:2px solid #ba0010;
-    display: inline-block;
-    margin-top:0;
-    padding: 5px;
-    font-size: 14px;
-}
-#About .about-section .resume a:hover{
-    border:2px solid #ba0010;
-    background-color: #ba0010;
-    color:white;
-}
-#About .profile-img img{
-    max-width: 220px;
-    border:1px solid #20272e;
-    border-radius: 10px;
-}
-/* About ends here */
 
 /* Contact starts */
 #Contact .contact-section{

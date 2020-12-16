@@ -150,12 +150,18 @@ nav{
 /* Project Starts */
 #Projects .title{
     padding-top: 10%;
-        
+
 
 }
-#Projects .all-projects{
+#Projects .project-container{
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#Projects .all-projects{
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px 0;

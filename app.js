@@ -24,3 +24,12 @@ const navSlide =()=>{
 }
 
 navSlide();
+
+$(document).ready(function(){
+    $('.Home').height($(window).height());
+    $('.About').height($(window).height());
+    $('.Contact').height($(window).height());
+
+    
+    
+   })
